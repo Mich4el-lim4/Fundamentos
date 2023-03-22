@@ -13,22 +13,24 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		Employee employee = new Employee();
 		
-		System.out.println("Digite o nome: ");
+		System.out.print("Digite o nome: ");
 		employee.name = sc.next();
 		
-		System.out.println("Digite o salario bruto: ");
+		System.out.print("Digite o salario bruto: ");
 		
 		employee.grossSalay = sc.nextDouble();
 		
-		System.out.println("Digite a taxa: ");
+		System.out.print("Digite a taxa: ");
 		employee.tax = sc.nextDouble();
+		System.out.println();
 		
 		System.out.println(employee);
 		
 		System.out.println();
-		System.out.println("Digite a porcetangem de acrecimo: ");
+		System.out.print("Digite a porcetangem de acrecimo: ");
 		double incremento = sc.nextDouble();
 		employee.increaseSalary(incremento);
+		System.out.println();
 		
 		sc.close();
 	}
