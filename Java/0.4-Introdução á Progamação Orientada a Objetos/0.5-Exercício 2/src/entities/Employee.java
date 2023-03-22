@@ -11,7 +11,7 @@ public class Employee {
 	}
 	
 	public void increaseSalary(double percentage) {
-		double salaryPlusPercentage = netSalary() * (percentage / 100);
+		double salaryPlusPercentage = grossSalay * percentage / 100;
 		double total = salaryPlusPercentage + netSalary();
 		System.out.println();
 		System.out.println("Updated data: ");
