@@ -47,8 +47,12 @@ public class Client {
 			this.value = getValue() - valorSaca - taxa;
 			System.out.printf("Valor do saque %.2f, mais taxa %.2f, total de %.2f ", 
 					valorSaca, taxa, valorSaca + taxa);
+			System.out.println();
+			System.out.print("Total em conta: " + getValue() + " R$");
 		} else {
+			System.out.println();
 			System.out.println("Valor insuficiente");
+			System.out.print("Total em conta: " + getValue());
 		}
 	}
 	
