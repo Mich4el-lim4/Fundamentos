@@ -10,7 +10,7 @@ public class Client {
 	public Client(int numeroConta, String nomeTitular, double initialDeposit) {
 		this.numeroConta = numeroConta;
 		this.nomeTitular = nomeTitular;
-		this.value = initialDeposit;
+		deposit(initialDeposit);
 	}
 	
 	public Client(int numeroConta, String nomeTitular) {
@@ -39,7 +39,7 @@ public class Client {
 	}
 
 	public void deposit(double deposit) { 
-		this.value =  getValue() + deposit;
+		this.value += deposit;
 	}
 	
 	public void saca(double valorSaca) {
@@ -49,6 +49,7 @@ public class Client {
 					valorSaca, taxa, valorSaca + taxa);
 			System.out.println();
 			System.out.print("Total em conta: " + getValue() + " R$");
+			toString();
 		} else {
 			System.out.println();
 			System.out.println("Valor insuficiente");
@@ -56,5 +57,13 @@ public class Client {
 		}
 	}
 	
-
+	public String toString() {
+		return "Numero da conta: "
+				+ getNumeroConta()
+				+ ", Titular: "
+				+ getNomeTitular()
+				+ "Valor atual"
+				+ String.format("%.2f", getValue());
+	}
+	
 }
