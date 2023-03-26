@@ -45,8 +45,11 @@ public class Client {
 	public void saca(double valorSaca) {
 		if(value >= valorSaca + taxa) {
 			this.value = getValue() - valorSaca - taxa;
-			System.out.printf("Valor do saque %.2f, mais taxa %.2f, total de %.2f ", valorSaca, taxa, valorSaca + taxa);
+			System.out.printf("Valor do saque %.2f, mais taxa %.2f, total de %.2f ", 
+					valorSaca, taxa, valorSaca + taxa);
 			System.out.println();
+			System.out.print("Total em conta: " + getValue() + " R$");
+			toString();
 		} else {
 			System.out.println();
 			System.out.println("Valor insuficiente");
@@ -59,9 +62,8 @@ public class Client {
 				+ getNumeroConta()
 				+ ", Titular: "
 				+ getNomeTitular()
-				+ ", Valor atual R$ "
-				+ String.format("%.2f", getValue())
-				+ "\n";
+				+ "Valor atual"
+				+ String.format("%.2f", getValue());
 	}
 	
 }
