@@ -1,11 +1,5 @@
 package br.com.myBank.bank.modelo;
 
-/**
- * 
- * @author micha
- *
- */
-
 public class Conta {
 	private double saldo;
 	private int agencia;
