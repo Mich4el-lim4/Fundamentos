@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/02.1-Nova versão Orientação a Objetos.iml" filepath="$PROJECT_DIR$/.idea/02.1-Nova versão Orientação a Objetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_01.1-primeiro projeto/_01.1-primeiro projeto.iml" filepath="$PROJECT_DIR$/_01.1-primeiro projeto/_01.1-primeiro projeto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_02.1-Projeto banco/_02.1-Projeto banco.iml" filepath="$PROJECT_DIR$/_02.1-Projeto banco/_02.1-Projeto banco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_03.1-Projeto-Screenmatch/_03.1-Projeto-Screenmatch.iml" filepath="$PROJECT_DIR$/_03.1-Projeto-Screenmatch/_03.1-Projeto-Screenmatch.iml" />
+    </modules>
+  </component>
+</project>
