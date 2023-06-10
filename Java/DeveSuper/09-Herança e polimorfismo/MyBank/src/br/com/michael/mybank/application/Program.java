@@ -41,7 +41,7 @@ public class Program {
 				Titular cliente = new Titular(nome, cpf);
 				
 				if(depositoInicial == 's') {
-					System.out.println("Valor do deposito inicial: ");
+					System.out.print("Valor do deposito inicial: ");
 					double valorDepositoInicial = sc.nextDouble();
 					list.add(new Conta(conta, agen, cliente, valorDepositoInicial));
 				} else if(depositoInicial == 'n') {
@@ -54,7 +54,11 @@ public class Program {
 				System.out.println("Quantidade de contas criadas: " + Conta.getTotal());
 				System.out.println();
 				break;
-				
+			case 3:
+				System.out.println();
+				System.out.println("Quantidade de contas criadas: " + Conta.getTotal());
+				System.out.println();
+				break;	
 			default:
 				break;
 			}
